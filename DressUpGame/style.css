@@ -1,0 +1,447 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottomtxt{
+  text-align:end;
+  font-weight:400;
+  position:fixed;
+  bottom:0;
+  left:80%;
+  margin: 20px;
+}
+
+.buttonbox{
+  display:flex;
+  position:absolute;
+  top:20%;
+  left: 32%;
+  bottom:25%;
+}
+
+.pairing {
+  display:flex;
+  
+}
+.buttonBox {
+  position: absolute;
+  right: 20%;
+  bottom: 50%;
+  margin: 10px;
+  display:flex;
+  flex-direction: column;
+}
+button {
+  margin-top:30%;
+  transition: 0.1s linear;
+  color:rgb(255, 61, 158);
+  border-color: rgb(252, 178, 215);
+
+}
+button:hover {
+  background-color: rgb(248, 252, 255);
+  box-shadow: 0px 2px 4px 1px rgb(160, 255, 144);
+}
+ul{
+	list-style-type: none;
+	display:inline-block;
+}
+
+h1{
+  text-align: left;
+  font-size: larger;
+}
+.container{
+  margin: auto;
+  height: 600px;
+  width: 425px;
+  position:relative;
+}
+
+.model{
+  height: 700px;
+  width: 525px;
+  z-index:-1;
+  position:absolute;
+}
+
+.render {
+  position: absolute;
+  left:90%;
+  bottom:10%;
+  opacity: 0.2;
+}
+
+.head {
+  visibility:hidden;
+  height: 700px;
+  width: 525px;
+  z-index: 1;
+  position:absolute;
+}
+.hat {
+  visibility:hidden;
+  height: 700px;
+  width: 525px;
+  z-index: 2;
+  position:absolute;
+}
+.shoes {
+  visibility:hidden;
+  height: 700px;
+  width: 525px;
+  z-index: 3;
+  position:absolute;
+}
+.bottom {
+  visibility:hidden;
+  height: 700px;
+  width: 525px;
+  z-index: 4;
+  position:absolute;
+}
+.dress {
+  visibility:hidden;
+  height: 700px;
+  width: 525px;
+  z-index: 5;
+  position:absolute;
+}
+.top {
+  visibility:hidden;
+  height: 700px;
+  width: 525px;
+  z-index: 6;
+  position:absolute;
+}
+.bag {
+  visibility:hidden;
+  height: 700px;
+  width: 525px;
+  z-index: 7;
+  position:absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  #model {
+    background-image: url("images/model.png");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+    z-index: 0;
+  }
+  #head {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+    z-index: 1;
+  }
+  #hat {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+    z-index: 2;
+  }
+  #shoes {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+    z-index: 3;
+  }
+  #bottom {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+    z-index: 4;
+  }
+  #dress {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+    z-index: 5;
+  }
+  #top {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+    z-index: 6;
+  }
+  #bag {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+    z-index: 7;
+  }
+  
+
+  .dress1 {
+    background-image: url("images/dress1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+
+  }
+  .dress2 {
+    background-image: url("images/dress2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+
+  }
+  .dress3 {
+    background-image: url("images/dress3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .dress4 {
+    background-image: url("images/dress4.png");
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .dress5 {
+    background-image: url("images/dress5.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .dress6 {
+    background-image: url("images/dress6.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+
+  .shoes1 {
+    background-image: url("images/shoes1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .shoes2 {
+    background-image: url("images/shoes2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .shoes3 {
+    background-image: url("images/shoes3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .shoes4 {
+    background-image: url("images/shoes4.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .shoes5 {
+    background-image: url("images/shoes5.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  
+  .hat1 {
+    background-image: url("images/hat1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .hat2 {
+    background-image: url("images/hat2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .hat3 {
+    background-image: url("images/hat3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .hat4 {
+    background-image: url("images/hat4.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  
+  .head1 {
+    background-image: url("images/head1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .head2 {
+    background-image: url("images/head2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .head3 {
+    background-image: url("images/head3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+
+  .top1 {
+    background-image: url("images/top1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .top2 {
+    background-image: url("images/top2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .top3 {
+    background-image: url("images/top3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .top4 {
+    background-image: url("images/top4.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  
+  .bottom1 {
+    background-image: url("images/bottoms1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bottom2 {
+    background-image: url("images/bottoms2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bottom3 {
+    background-image: url("images/bottoms3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bottom4 {
+    background-image: url("images/bottoms4.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bottom5 {
+    background-image: url("images/bottoms5.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bottom6 {
+    background-image: url("images/bottoms6.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bottom7 {
+    background-image: url("images/bottoms7.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bottom8 {
+    background-image: url("images/bottoms8.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bottom9 {
+    background-image: url("images/bottoms9.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bottom10 {
+    background-image: url("images/bottoms10.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+
+  .bag0 {
+    background-image: url("images/bag01.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  .bag1 {
+    background-image: url("images/bag02.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 525px;
+  }
+  */
+
+
+
+
