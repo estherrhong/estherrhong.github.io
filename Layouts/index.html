@@ -8,21 +8,38 @@
         <link href="styles.css" rel="stylesheet">
 
         <style>
-            a.one:link {color:#ff0000;}
-            a.one:visited {color:#0000ff;}
-            a.one:hover {color:#ffcc00;}
+            a.portal:link {color:hsl(285, 100%, 77%);}
+            a.portal:visited {color:#02b03f;}
+            a.portal:hover {color:#ff9500;}
+
+            a.switch:link {color:#22f4ff; font-size:110%; font-family:Helvetica, sans-serif; font-weight:bold}
+            a.switch:visited {color:#ff6bf5; font-size:110%; font-family:Helvetica, sans-serif; font-weight:bold}
+            a.switch:hover {color:rgb(116, 163, 249); font-family:monospace; font-size:160%; text-decoration:none;}
+
+            a.unfaze:link{color:black}
+            a.unfaze:visited{color:black}
+            a.unfaze:hover{color:black}
         </style>
     </head>
 
     <body>
         <header>
             <p>my scripting notebook &star;</p>
-            <div id="htmlcssbuttons"><button href="pages/html.html" type="button">html</button>
-            <button href="pages/css.html" type="button">css</button></div>
+            <div id="htmlcssbuttons">
+                <a href="pages/html.html">
+                    <button type="button">html</button>
+                </a>
+                <a href="pages/css.html">
+                    <button type="button">css</button>
+                </a>
+            </div>
         </header>
         <main>
-            <!--start with the basics of text and formatting-->
-            <div class="hflex_container">
+<div id="emptyspace">
+
+    
+</div>
+            <div class="textypes">
                 <div><h1>h1</h1></div>
                 <div><h2>h2</h2></div>
                 <div><h3>h3</h3></div>
@@ -32,30 +49,181 @@
                 <div><h6>h6</h6></div>
                 <div><p>p</p></div>
             </div>
+
             <b>bold</b> <strong>strong</strong> <i>italic</i> <em>emphasized</em>
             <mark>marked</mark> <small>smaller</small> <del>deleted</del> <ins>insterted</ins>
             <sub>subscript</sub> <sup>superscript</sup>
             
-            <p>watch me flex on this <i>inline</i> yeahhhhh</p>
-            <p class="custom1">woh thats pretty cool but check out this custom class attribute&nbsp;&nbsp;<sup>ok bruh whatever</sup>
+            <p>
+                watch me flex on this <i>inline</i> yeahhhhh
+            </p>
+
+            <p class="custom1">
+                woh thats pretty cool but check out this custom class attribute&nbsp;&nbsp;<sup>ok bruh whatever</sup>
+            </p>
+
             <p>if i want to write in a different language, I should change the lang attribute for accessibility
                 purposes, <span lang="ko">왜냐하면</span> it's important for your writing to be recognized by browsers
                 and search engines.
             </p>
-            <p>
-                <a href="pages/firstlink.html">links are like portals</a>. personally, i think
-                an uncustomized is kind of ugly. so sometimes, i like to <a class="one" href="pages/firstlink.html">switch it up</a>. 
-            </p>
             
+            <p>
+                links are like <a class="portal" href="pages/portalink.html">portals</a>. you can use them to link to <a href="https://www.instagram.com/petrichorvault/">other sites</a> on the web as well as additional pages of your <a href="pages/firstlink.html">own site</a>. personally, i think
+                an uncustomized link is kind of ugly. so sometimes, i like to <a class="switch" href="pages/firstlink.html">switch it up</a>. 
+            </p>
 
+            <p>buttons are soooo much fun hehehee. find the hidden carrot if you're hungry.</p>
 
-
-
+            <div id="buttonspread">
+                <div><button type="button" style="background-color:aqua">click me!</button></div>
+                <div><button type="button" style="background-color:#ff9500">or meee</button></div>
+                <div><button type="button" style="background-color:beige; color:crimson">me?</button></div>
+                <div><button type="button" style="background-color:rgb(255, 255, 0); color:rgb(49, 0, 228)">choose me</button></div>
+                <div>
+                    <a href="pages/carrot.html">
+                        <button type="button" style="background-color:rgb(255, 0, 136); color:rgb(159, 248, 141)">pick me</button>
+                    </a>
+                </div>
+                <div><button type="button" style="background-color:rgb(160, 168, 249); color:rgb(4, 0, 83)">love me</button></div>
+                <div><button type="button" style="background-color:rgb(29, 187, 8); color:rgb(195, 253, 228)">oh</button></div>
+                <div><button type="button" style="background-color:rgb(255, 0, 0); color:rgb(255, 255, 255)">love is timeless, even when it's not right?</button></div>
+            </div>
+            <p>if you plan on linking to another html page, or adding media files to your page, you've got to have your organizational strategy in check.</p>
+            <figure>
+                <img src="media/filestructure.png" alt="file structure diagram" style="width: 20%">
+                <figcaption>add captions to your images using figure and figcaption</figcaption>
+            </figure>
+            <p>
+                solid file organization is <em>essential</em> to a functioning webpage. get right with it or you will experience <sup>coding<sup>trauma<sup>...</sup></sup></sup>
+            </p>
+            <div class="videoflex_container">
+                <div>
+                    <figure>
+                        <video width="320" height="240" controls>
+                            <source src="media/sayuncutgems.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption>this video is nested in my project folder's media folder</figcaption>
+                    </figure>
+                </div>
+                <div class="flextext">
+                    <p>
+                        <-- when insertting your own content, make sure to include
+                        multiple src types 4 accessibility's sake.
+                        4 example, i included an mp4 file, and then an ogg audio file.
+                        in the event that a browser cant load <em>any</em> of your media, 
+                        include a troubleshooting message.
+                        this practice goes for all types of media. 
+                    </p>
+                </div>
+                <div>
+                    <figure>
+                        <iframe width="320" height="240" src="https://www.youtube.com/embed/jFvBXQaeMZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <figcaption>you can also embed videos from the internet</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <p>boxes and things</p>
+            <div>
+                <div class="boxmodelcream">
+                    <p>
+                        the box model gives you the power to add borders, padding, and margins to 
+                        your content. it's used in everything. it is everything. it is the divine.
+                    </p>
+                </div>
+                <div class="boxmodelorange">
+                    <p>
+                        <a class="unfaze" href="https://www.w3schools.com/css/css_float.asp">float and clear</a> are useful tools for box models.
+                    </p>
+                </div>
+                <div class="boxmodelseafoam">
+                    <img src="media/pixelangelwing.png" alt="pixel angel wing" width="75px" height="100px" style="float:left; margin-right: 10px;">
+                    <p>
+                        float allows elements 2 sit next 2 each other w/o wrapping
+                    </p>
+                </div>
+                <div class="boxmodelpink">
+                    <p style="float:left"> 
+                        clear specifies what should happen to the element that is next to the floating element. if u want the next element to be below the float, use clear.
+                    </p>
+                    <img src="media/pixelcone.png" alt="pixel cone" width="78.43px" height="100px" style="clear:right"> <!--notworking-->
+                </div>
+            </div>
+            <p>and yeah, right there ^^^? i just <a href="https://www.w3schools.com/css/css3_flexbox.asp">flexbox</a>d on you. and imma do it again:</p>
+            <div class="flexandgridsec">
+                <div>
+                    <p style="color:hotpink">flexbox properties:</p>
+                    <ul>
+                        <li>display</li>
+                        <li>flex-direction</li>
+                        <li>flex-wrap</li>
+                        <li>flex-grow</li>
+                        <li>flex-shrink</li>
+                        <li>flex-basis</li>
+                        <li>flex (flex-grow, flex shrink, flex-basis)</li>
+                        <li>justify-content</li>
+                        <li>align-items</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="media/flexboxdiagram.png" alt="flexbox diagram" style="width: 600px; height:262.5px">
+                </div>
+                <div class="flextext">
+                    <p style="color:limegreen">
+                        flexboxes are only one dimensional though.  
+                       if you want to level up to two, try a grid ↓↓↓
+                    </p>
+                </div>
+            </div>
+            <P>flexbox and grid can be used in conjunction with each other. a flexbox can be nested in a grid and vice versa.</P>
+            <div class="flexandgridsec">
+                <div>
+                    <p style="color:cadetblue">grid properties 4 parent:</p>
+                    <ul>
+                        <li>display</li>
+                        <li>grid-template-columns</li>
+                        <li>grid-template-rows</li>
+                        <li>grid-template-area</li>
+                        <li>grid-template (rows, columns, area)</li>
+                        <li>column-gap</li>
+                        <li>row-gap</li>
+                        <li>grid-column-gap</li>
+                        <li>grid-row-gap</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="media/gridtemplate.png" alt="grid diagram" style="width: 500px; height: 333px;">
+                </div>
+                <div>
+                    <p style="color:orange">grid properties 4 children:</p>
+                    <ul>
+                        <li>grid-column-start</li>
+                        <li>grid-column-end</li>
+                        <li>grid-column (start, end)</li>
+                        <li>grid-row-start</li>
+                        <li>grid-row-end</li>
+                        <li>grid-row (start, end)</li>
+                        <li>grid-area</li>
+                        <li>align-self</li>
+                    </ul>
+                </div>
+            </div>
+            <!--computer code display starts here-->
+            <div>
+                <div id="cpudisplay">
+                    <img src="media/retrocomputertansparent.png" alt="retro computer displaying code for site" style="width:600px; height:600px">
+                </div>
+                <!--
+                <div class="screenposition">
+                    <img src="media/blackrect.png" alt="black screem" style="width:210px; height:160px">
+                </div>
+                -->
+            </div>
         </main>
 
         <footer>
             <ul id="footer-items">
-                <p>2022 esthersujihong</p>
             </ul>
         </footer>
 
