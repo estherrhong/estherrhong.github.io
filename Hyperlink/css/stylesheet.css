@@ -1,19 +1,27 @@
+*{
+    text-size-adjust: 80%;
+    color: black
+}
+
 a:link {
     text-decoration: none;
-    color:black;
+    color: black
 }
 a:visited {
     text-decoration: none;
-    color: black;
+    color: black
 }
 a:active {
     text-decoration: none;
-    color: grey;
+    color: black
 }
 a:hover {
     text-decoration: none;
 }
 
+.bodycontainer {
+    margin:5%;
+}
 
 body{
     font-family: Apple Garamond Light, Times New Roman, serif;
@@ -53,7 +61,7 @@ body{
 .bottom {
     position: fixed;
     bottom: 0;
-    width: 80%;
+    width: 100%;
 }  
 .offCentered1{
     position: fixed;
@@ -103,6 +111,7 @@ body{
     top: 70%;
     left: 20%;
 }
+
 /*responsiveboxes*/
 .shybox{
     position: fixed;
@@ -118,4 +127,5 @@ body{
     width: 600px;
     margin: 5%;
 }
+
 
