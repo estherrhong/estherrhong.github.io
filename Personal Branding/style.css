@@ -1,0 +1,111 @@
+/* COLORS */
+.orange {
+	color: rgb(231, 95, 42);
+}
+.grey {
+	color: rgb(185, 184, 184);
+}
+.green {
+	color: rgb(90, 220, 129);
+}
+.yellow {
+	color: rgb(245, 255, 42);
+}
+.lila {
+	color: rgb(174, 54, 248);
+}
+.blue {
+	color: rgb(0, 65, 236);
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	padding: 1em 1em;
+	margin: 0;
+	width: 100%;
+	border-top: 2px solid rgb(126, 249, 254);
+	color: black;
+	font-size: 0.8em;
+}
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+/* Pop-Ups */
+.fotopopup {
+	border: 2px solid rgb(126, 249, 254);
+	background: white;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	z-index: 1;
+	cursor: grab;
+}
+
+.fotopopup:active {
+	cursor: grabbing;
+}
+
+a:link{
+	text-decoration: none;
+	color:black;
+}
+a:visited{
+	text-decoration: none;
+	color:black;
+}
+a:hover{
+	color:rgb(254, 33, 210);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Archivo', 'sans-serif';
+}
+
+.blurb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:auto;
+	margin-top: 8%;
+	width: 70%;
+	font-size: 4.3em;
+	
+}
+
+.typewriter p{
+	color: rgb(0, 0, 0);
+	font-family: 'Archivo', sans-serif;
+	font-size: larger;
+	margin: auto;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid rgb(0, 255, 55); /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	animation: 
+	  typing 3.5s steps(30, end),
+	  blink-caret .5s step-end infinite;
+  }
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: rgb(126, 249, 254) }
+  }
