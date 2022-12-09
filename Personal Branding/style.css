@@ -19,16 +19,16 @@
 }
 
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	padding: 1em 1em;
 	margin: 0;
 	width: 100%;
-	border-top: 2px solid rgb(126, 249, 254);
 	color: black;
-	font-size: 0.8em;
+	font-size: 1.5em;
+	font-weight: 800;
 }
-html, body { height: 100%;}
+html, body { height: 125%;}
 
 body > footer {
   position: sticky;
@@ -37,8 +37,6 @@ body > footer {
 
 /* Pop-Ups */
 .fotopopup {
-	border: 2px solid rgb(126, 249, 254);
-	background: white;
 	width: auto;
 	height: auto;
 	display: inline-block;
@@ -52,6 +50,19 @@ body > footer {
 .fotopopup:active {
 	cursor: grabbing;
 }
+
+/*.fotoborder{
+	border: 2px solid rgb(251, 156, 243);
+	background: white;
+}*/
+
+
+/*.pageextendr{
+	width: 50px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}*/
 
 a:link{
 	text-decoration: none;
@@ -74,38 +85,139 @@ a:hover{
 	font-family: 'Archivo', 'sans-serif';
 }
 
+p{
+	font-family:'Archivo', 'sans-serif'
+}
+
+.benensonflexcontainer{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+.benensonflexitem{
+	align-self: auto;
+	flex-shrink: 2;
+	flex: 1 1 auto;
+	margin:3%;
+
+}
+
+.projectdescription{
+	font-weight: 900;
+	font-size: large;
+}
+
+#essay{
+	margin:4%;
+}
+
+
+
+@media screen and (max-width: 1300px){
+	.benensonflexcontainer{
+		display:grid;
+		justify-content: center;
+		grid-template-columns: 300px 300px;
+		gap: 100px;
+		
+	}
+	.benensonflexitem{
+		display: inline-grid;
+		margin:1%;
+	
+	}
+}
+
+
+@media screen and (max-width: 700px){
+	.benensonflexcontainer{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		
+	}
+	.benensonflexitem{
+		margin:1%;
+	}
+}
+
+
 .blurb{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin:auto;
-	margin-top: 8%;
+	margin-top: 10%;
 	width: 70%;
-	font-size: 4.3em;
+	font-size: 3.8em;
+	font-weight: 800;
+	text-align: center;
 	
 }
 
-.typewriter p{
-	color: rgb(0, 0, 0);
-	font-family: 'Archivo', sans-serif;
-	font-size: larger;
-	margin: auto;
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: .15em solid rgb(0, 255, 55); /* The typwriter cursor */
-	white-space: nowrap; /* Keeps the content on a single line */
-	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	animation: 
-	  typing 3.5s steps(30, end),
-	  blink-caret .5s step-end infinite;
-  }
-/* The typing effect */
-@keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
+.benenall{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.benenpart{
+	margin:2%;
+	justify-content: center;
+}
+
+.benensonflexcolumn{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	
+}
+.benensonflexcol{
+	align-self: auto;
+	flex: 1 1 auto;
+	margin:4%;
+
+}
+
+.vertical-menu a {
+	color: black;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
   }
   
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-	from, to { border-color: transparent }
-	50% { border-color: rgb(126, 249, 254) }
+  .vertical-menu {
+	display: float;
+	width: 200px;
+	float: right;
+  }
+  
+  .vertical-menu a {
+	color: black;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+	color: rgb(21, 255, 0);
+  }
+  
+  .vertical-menu a.active {
+	color: rgb(254, 33, 210);
+  }
+
+  .bottomimage{
+	display: block;
+	position: sticky;
+	bottom: 0;
+	padding:0;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	
+	  
   }
