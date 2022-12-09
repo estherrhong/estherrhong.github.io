@@ -5,9 +5,9 @@
 .bottomtxt{
   text-align:end;
   font-weight:400;
-  position:fixed;
+  position:absolute;
   bottom:0;
-  left:80%;
+  left:85%;
   margin: 20px;
 }
 

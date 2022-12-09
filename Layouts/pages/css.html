@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <meta name="author" content ="Esther Hong">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title class="custom1">my scripting notebook</title>
+        <link href="../styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <p>my scripting notebook &star;</p>
+            <div id="htmlcssbuttons">
+                <a href="../index.html">
+                    <button type="button">html</button>
+                </a>
+                <a href="pages/css.html">
+                    <button type="button">css</button>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <br>
+            <br>
+            <p>CSS (Cascading Style Sheets) are used to define styles for your web pages, including the design, layout, and their responsivity for different screen sizes</p>
+            <p>there are three forms of style sheets:</p>
+            <div class="flexr">
+                <div class="inflex">
+                    inline (written within a selector)
+                    <br>
+                    <img src="../media/inline.png" width="200">
+                </div>
+                <div class="inflex">
+                    internal (written into a style block)
+                    <br>
+                    <img src="../media/internal.png" width="200">
+                </div>
+                <div class="inflex">
+                    external (written on a separate style sheet linked to your html file)
+                    <br>
+                    <img src="../media/external.png" width="200">
+                </div>
+            </div>
+            <p> you can use the link tags external stylesheets to link to your html files like so: &lt;link href="styles.css" rel="stylesheet"></p>
+            <figure>
+                <img src="../media/css-syntax.png" width="300">
+                <figcaption>a CSS rule consists of a selector and declaration block</figcaption>
+            </figure>
+
+        <div class="flexr">
+            <div>
+            <li>there are many different types of selectors! here are some simple ones
+                <ul><strong>#id -</strong> (ex: #firstname) selects the element with id="firstname"</ul>
+                <ul><strong>.class  -</strong> (ex:.intro) selects all elements with class="intro"</ul>
+                <ul><strong>element.class  -</strong> (ex: p.intro) selects only &lt;p> elements with class="intro"</ul>
+                <ul><strong>*  -</strong> selects all elements</ul>
+                <ul><strong>element  -</strong> (ex: p) selects all &lt;p> elements</ul>
+                <ul><strong>element,element,...  -</strong> (ex: div, p) selects all &lt;div> elements and all &lt;p> elements </ul>
+            </li>
+            </div>
+            
+            <div>
+                <li>here are just a handful of declarations you can use for them
+                    <ul><strong>color - </strong> color of your text</ul>
+                    <ul><strong>background color - </strong> colorizes the background of your element</ul>
+                    <ul><strong>border - </strong> adds a border and allows you to customize its features</ul>
+                    <ul><strong>font-family - </strong> change the font of your text</ul>
+                    <ul><strong>font-weight - </strong> change the thickness of your font</ul>
+                    <ul><strong>text-align - </strong> customizes how text aligns on the page </ul>
+                    <ul><strong>width - </strong> sets the width of an element</ul>
+                    <ul><strong>height - </strong> sets the height of an element</ul>
+                    <ul><strong>padding - </strong> sets the amount of padding</ul>
+                    <ul><strong>margin - </strong> sets the margin of your element</ul>
+                    <ul><strong>display - </strong> determines display (block, flex, grid,etc.)</ul>
+                </li>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+            <h3 style="color:darkorange;font-family:cursive;"> the possibilities are endless~ here are some boxes made with some of the declarations listed above</h3>
+            <div class="gridder">
+                <div class="boxmodelcream"></div>
+                <div class="boxmodelorange"></div>
+                <div class="boxmodelpink"></div>
+                <div class="boxmodelseafoam"></div>
+            </div>
+
+            <div>
+                <div id="cpudisplay">
+                    <img src="../media/retrocomputertansparent.png" alt="retro computer displaying code for site" style="width:600px; height:600px">
+                </div>
+                <!--
+                <div class="screenposition">
+                    <img src="media/blackrect.png" alt="black screem" style="width:210px; height:160px">
+                </div>
+                -->
+            </div>
+
+        </main>
+    </body>
+<footer>
+    <ul id="footer-items">
+    </ul>
+</footer>
+
+
+</body>
+</html>

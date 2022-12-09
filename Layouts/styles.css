@@ -23,6 +23,29 @@
     width:100%;
 }
 
+.flexr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inflex{
+    margin: 2%;;
+}
+
+.gridder{
+    display: grid;
+    gap: 10px 10px 10px 10px;
+    grid-template-columns: 500px 500px;
+}
+
+@media screen and (max-width: 1000px) {
+    .gridder{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /*computerdisplay*/
 
 #cpudisplay{
@@ -64,7 +87,7 @@ body{
 
 .boxmodelcream{
     background-color: antiquewhite;
-    width: 400px;
+    width: 200px;
     border: 50px solid lightskyblue;
     padding: 30px;
     margin: 20px;
